@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "jsx-a11y", "import"],
+  "rules": {
+    "react/prefer-stateless-function": 0,
+    "react/no-typos": "warn",
+    "react/no-unused-state": "warn",
+    "max-len": ["error", { "code": 120, "ignoreStrings": true }],
+    "no-use-before-define": 0,
+    "prefer-promise-reject-errors": "warn",
+    "prefer-destructuring": [
+      "warn",
+      {
+        "array": false,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {},
+      "node": {
+        "extensions": [".js", ".ios.js", ".android.js"]
+      }
+    }
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "globals": {
+    "fetch": false
+  }
+}

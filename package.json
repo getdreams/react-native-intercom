@@ -1,6 +1,6 @@
 {
   "name": "react-native-intercom",
-  "version": "11.0.0",
+  "version": "12.0.0",
   "description": "A React Native client for Intercom.io",
   "main": "./lib/IntercomClient.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinycreative/react-native-intercom.git"
+    "url": "git+https://github.com/getdreams/react-native-intercom.git"
   },
   "author": "Asa Miller",
   "contributors": [
@@ -23,12 +23,30 @@
     {
       "name": "Jason Brown",
       "email": "browniefed@gmail.com"
+    },
+    {
+      "name": "Albert Schapiro",
+      "email": "albert.schapiro@getdreams.com"
     }
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tinycreative/react-native-intercom/issues"
+    "url": "https://github.com/getdreams/react-native-intercom/issues"
   },
-  "homepage": "https://github.com/tinycreative/react-native-intercom",
-  "dependencies": {}
+  "homepage": "https://github.com/getdreams/react-native-intercom",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "prettier": "1.12.1"
+  }
 }
