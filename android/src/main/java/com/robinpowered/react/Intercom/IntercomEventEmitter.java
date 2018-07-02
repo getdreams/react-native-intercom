@@ -28,7 +28,11 @@ public class IntercomEventEmitter extends ReactContextBaseJavaModule {
 
     public IntercomEventEmitter(ReactApplicationContext reactContext) {
         super(reactContext);
-        Intercom.client().addUnreadConversationCountListener(unreadConversationCountListener);
+        try {
+            Intercom.client().addUnreadConversationCountListener(unreadConversationCountListener);
+        } catch (IllegalStateException ex) {
+            Log.e(TAG, "Intercom was not yet initalized");
+        }    
     }
 
     @Override
